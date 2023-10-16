@@ -1,4 +1,3 @@
-import RecipeItem from "~/components/RecipeItem"
 import { lobster } from "./fonts"
 
 export default function Home() {
