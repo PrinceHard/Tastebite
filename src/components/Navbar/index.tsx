@@ -6,13 +6,13 @@ const Navbar = () => {
         <header>
             <div className="py-3 flex items-center justify-around">
                 <span className={`${lobster.className} text-5xl`}>
-                    <Link href="/">
+                    <Link href={'/'}> 
                         Tastebite
                     </Link>
                 </span>
                 <nav className="flex gap-6">
-                    <Link className="hover:underline" href="/categorias">Categorias</Link>
-                    <Link className="hover:underline" href="/sobre">Sobre</Link>
+                    <Link className="hover:underline" href={"/categorias"}>Categorias</Link>
+                    <Link className="hover:underline" href={"/sobre"}>Sobre</Link>
                 </nav>
                 <div>
                     <input
