@@ -1,5 +1,12 @@
+import IngredientList from "../IngredientList"
+import InstructionsList from "../InstructionsList"
+import YoutubeVideo from "../YoutubeVideo"
+
 
 const RecipeItem = () => {
+    const instructions = [""]
+    const ingredients = [""]
+    const youtubeUrl = ""
     return (
         <div>
             <h1 className="font-semibold text-4xl">Nome da Receita</h1>
@@ -17,18 +24,11 @@ const RecipeItem = () => {
                     <span>Italiana</span>
                 </div>
             </div>
-            <hr/>
+            <hr />
             <div className="mt-2 flex flex-col gap-3">
-                <span className="font-semibold text-lg">Ingredientes:</span>
-                <ul className="list-item">
-                    <li>1 xícara de farinha de trigo</li>
-                </ul>
-                <span className="font-semibold text-lg">Instruções:</span>
-                <ul>
-                    <li>1 xícara de farinha de trigo</li>
-                </ul>
-                <span className="font-semibold text-lg">Tutorial:</span>
-                <video src="https://www.youtube.com/watch?v=1IszT_guI08" />
+                <IngredientList ingredients={ingredients}/>
+                <InstructionsList instructions={instructions}/>
+                <YoutubeVideo videoUrl={youtubeUrl} />
             </div>
         </div>
     )
